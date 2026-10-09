@@ -1,0 +1,20 @@
+[project]
+name = "ai-agent"
+version = "0.1.0"
+description = "Lightweight autonomous file organization agent using LLM tool calling"
+readme = "README.md"
+authors = [
+    { name = "Samuel Olaseinde-isaac", email = "samuelolaseinde14@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+ai-agent = "ai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
